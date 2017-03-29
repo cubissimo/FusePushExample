@@ -1,0 +1,27 @@
+<App Background="#eee">
+    <JavaScript>
+    var push = require("FuseJS/Push");
+
+    push.on("registrationSucceeded", function(regID) {
+       console.log("Reg Succeeded: " + regID);
+    });
+
+    push.on("error", function(reason) {
+       console.log("Reg Failed: " + reason);
+    });
+
+    push.on("receivedMessage", function(payload) {
+       console.log("Received Push Notification: " + payload);
+    });
+
+
+    </JavaScript>
+
+    <iOS.StatusBarConfig Style="Light" />
+    <Android.StatusBarConfig Color="#000" />
+
+    <DockPanel >
+
+    </DockPanel>
+
+</App>

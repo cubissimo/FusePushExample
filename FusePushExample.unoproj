@@ -1,0 +1,19 @@
+{
+    "Packages": [
+        "Fuse",
+        "FuseJS",
+        "Fuse.BasicTheme",
+        "Fuse.PushNotifications",
+        "Fuse.Controls"
+    ],
+    "Projects": [],
+    "Android": {
+        "GooglePlay": {
+            "SenderID": "******** YOUR SENDER ID ********"
+        }
+    },
+    "Includes": [
+        "*",
+        "./*.js:Bundle"
+    ]
+}
